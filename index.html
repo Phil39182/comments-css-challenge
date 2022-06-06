@@ -6,11 +6,13 @@
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+
 
   <title>Frontend Mentor | Interactive comments section</title>
 
@@ -21,10 +23,58 @@
   </style>
 </head>
 <body>
-  
+  <div id="all-comments">
+
+    <div class="comment-main">
+
+      <!-- comment vote div to be on lefthand side -->
+      <div class="comment-vote">
+        <img src="images/icon-plus.svg" class="comment-plus"> 
+        <p class="comment-vote-count"> 12 </p>
+        <img src="images/icon-minus.svg" class="comment-minus">
+      </div>
+
+
+      <!-- top of comment info username, date added, and reply -->
+      <div class="comment-info" class="container" >
+        <div>
+          <img class="comment-pic" src="./images/avatars/image-amyrobson.webp">
+        </div>
+        <div class="comment-owner">
+          <h3>amyrobson</h3>
+        </div>
+        <div class="comment-time">
+          <p> 1 month ago</p>
+        </div>
+        <div class="comment-reply">
+       <img src="images/icon-reply.svg" alt=""> <p> &nbsp Reply</p>
+        </div>
+
+      </div>
+      <!-- comment text contents -->
+      <div class="comment-text">
+        <p>Impressive! Though it seems the 
+          drag geature could be improved. But
+          overall it looks incredible. You've nailed 
+          the design and the responsivemess at various 
+        breakpoints works really well</p>
+      </div>
+    </div> 
+    <!-- end comment -->
+
+
+
+  </div>
+
+
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
 </body>
 </html>

@@ -1,0 +1,82 @@
+body {
+    background-color: hsl(239, 57%, 85%);
+    
+}
+
+.comment-main {
+    width: 750px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.comment-vote {
+    display: flex;
+    border: solid 1px;
+    padding: 5px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#all-comments {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+}
+
+.comment-info {
+    display: inline-flex;
+    height: 40px;
+    width: 530px;
+    padding: 10px;
+    margin-top: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comment-pic, .comment-owner, .comment-time, .comment-reply {
+    display: flex;
+    padding: 10px;
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    align-items: center;
+}
+
+
+.comment-pic {
+    width: 40px;
+}
+
+.comment-time {
+    color: grey;
+}
+
+.comment-reply {
+    display: flex;
+    align-content: flex-end;
+    color: hsl(238, 40%, 52%);
+    padding-left: 250px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.comment-plus {
+    margin-top: 1px;
+}
+.comment-minus {
+    margin-bottom: 0px;
+}
+.comment-vote-count {
+    color: hsl(238, 40%, 52%);
+}
+
+.comment-text {
+    display: flex;
+    position:relative;
+    width: 600px;
+}
